@@ -8,18 +8,14 @@
     </head>
     <body>
         <h1>blog Name</h1>
-            <div class="posts">
-                <div class="post">
-                <h3 class='title'>Title</h3>
-                <p class="body">this is my world.</p>
-                <h3 class="title2">title2</h3>
-                <p class="body2">I trust everyone.</p>
-                <h3 class='title3'>Title3</h3>
-                <p class="body3">this is my world.</p>
-                <h3 class="title4">title4</h3>
-                <p class="body4">this is my world.</p>
+        <div class='posts'>
+            @foreach ($posts as $post)
+                <div class='post'>
+                    <h2 class='title'>{{ $post->title }}</h2>
+                    <p class='body'>{{ $post->body }}</p>
                 </div>
-            </div>
+            @endforeach
+        </div>
     </body>
 
 </html>
