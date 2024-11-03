@@ -22,5 +22,5 @@
             {{$posts->links()}}
         </div>
     </body>
-
+    <a href='/posts/create'>新規作成</a>
 </html>
