@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\PostRequest;
 
 
 
@@ -23,7 +23,7 @@ class Postcontroller extends Controller
     {
         return view ('posts.create');
     }
-    public function store(Request $request, Post $post)
+    public function store(PostRequest $request, Post $post)
     {
         $input=$request['post'];
         $post->fill($input)->save();
