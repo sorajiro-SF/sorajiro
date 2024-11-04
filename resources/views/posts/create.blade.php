@@ -16,7 +16,7 @@
             </div>
             <div class="body">
                 <h2>内容</h2>
-                <textarea name="post[body]" name="post[title]" placeholder="ここに入力してください"/>{{old("post.body")}}</textarea>
+                <textarea name="post[body]" name="post[body]" placeholder="ここに入力してください"/>{{old("post.body")}}</textarea>
                 <p class="body_error" style="color:red" >{{ $errors->first("post.body")}}</p>
             </div>
             <input type="submit" value="store"/>
