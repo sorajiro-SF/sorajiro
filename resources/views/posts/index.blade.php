@@ -12,7 +12,7 @@
             @foreach ($posts as $post)
                 <div class='post'>
                     <h2 class='title'>
-                        <a href="/post/{{$post->id}}">{{ $post->title }}</a>
+                        <a href="/posts/{{$post->id}}">{{ $post->title }}</a>
                     </h2>
                     <p class='body'>{{ $post->body }}</p>
                 </div>
@@ -22,5 +22,5 @@
             {{$posts->links()}}
         </div>
     </body>
-
+    <a href='/posts/create'>新規作成</a>
 </html>
