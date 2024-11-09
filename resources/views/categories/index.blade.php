@@ -37,6 +37,10 @@
             }
         }
         </script>
-    </body>
+    
     <a href='/posts/create'>新規作成</a>
+    <div class="footer">
+            <a href="/">元の一覧に戻る</a>
+    </div>
+    </body>
 </html>

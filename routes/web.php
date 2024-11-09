@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Postcontroller;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController; 
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,5 @@ Route::post('/posts',[Postcontroller::class,'store']);
 Route::get('/posts/{post}/edit',[Postcontroller::class,'edit']);
 Route::put('/posts/{post}',[Postcontroller::class,'update']);
 Route::delete('/posts/{post}', [PostController::class,'delete']);
+Route::get('/categories/{category}', [CategoryController::class,'index']);
 //RESTのURLの考え方はここじゃね？//
